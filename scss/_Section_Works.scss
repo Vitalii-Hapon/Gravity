@@ -1,5 +1,4 @@
 .S_works {
-  //height: 1256px;
   margin-top: 202px;
   padding: 0 125px;
 }
@@ -29,34 +28,36 @@
 .S_works_gallery_button {
   @extend %label-text;
   opacity: 0.3;
-  &:hover {
+  transition: 0.2s ease-in-out;
+  &:hover,:active {
     opacity: 1;
     color: #1434E1;
   }
+  cursor: pointer;
 }
 
 
 .S_works_gallery {
-  //height: 930px;
+  width: 1140px;
   margin-top: 78px;
-  @extend %space-between;
+  @extend %d-flex;
   flex-wrap: wrap;
-  display: none;
-
-  &__active {
-    display: flex;
-  }
 }
 
 .S_works_gallery-item {
   width: 350px;
   height: 450px;
   margin-top: 30px;
-  transition: 0.2s ease-in-out;
-
+  margin-right: 30px;
+  //margin-right: 30px;
+  transition: 0.5s ease;
   &:hover {
-    margin-top: 10px;
     box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+    -moz-transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    transform: translate(0px, -10px);
   }
 }
 

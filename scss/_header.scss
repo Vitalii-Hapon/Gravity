@@ -1,6 +1,5 @@
 .header {
   height: 142px;
-  background: #fff;
   @extend %space-between;
   align-items: center;
   padding: 0 125px;
@@ -8,18 +7,36 @@
   background: #F4F4F4;
 }
 
-.header_search-btn {
-  width: 20px;
-  height: 20px;
-  background: url("../images/search-icon.png") 0 no-repeat;
-  vertical-align: center;
+.header_icon {
+    background: url("../images/spritesheet.png") no-repeat;
+    display: block;
+    transition: 0.2s ease-in-out;
+
+  @each $name, $width, $height, $x, $y in (logo, 75px, 24px, -5px, -103px),
+          (search-btn, 20px, 20px, -133px, -31px),
+          (main-menu-btn, 34px, 14px, -90px, -118px)
+  {
+    &__#{$name} {
+      width: $width;
+      height: $height;
+      background-position: $x $y;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.header_search {
+  @extend %d-flex;
+}
+
+.header_icon__search-btn {
+  margin-left: 10px;
   @extend %button
 }
 
-.header_main-menu-btn {
-  width: 34px;
-  height: 14px;
-  background: url("../images/menu-icon.png") 0 no-repeat;
+.header_icon__main-menu-btn {
   @extend %button
 }
 
@@ -28,12 +45,60 @@
   opacity: 0;
   transition: 0.6s;
   border: 0;
+
 }
 
 .header_input-search.header_active-search {
   width: 150px;
   border: 1px solid #000;
+  outline: none;
   opacity: 1;
+  text-decoration: #c4c4c4;
+  &:hover, &:active {
+    box-shadow: 0px 0px 5px 3px rgba(196,196,196,1);
+  }
 }
 
+.header_main-menu_nav {
+  position: absolute;
+  top: 142px;
+  width: 0;
+  opacity: 0;
+  border: 0;
+  transition: 0.6s;
+}
+
+.header_main-menu_nav.header_main-menu_nav_active {
+  opacity: 1;
+  width: 120px;
+  background-color: #f4F4F4;
+  margin-left: -60px;
+
+}
+
+.header_main-menu_ul {
+  @extend %d-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 26px;
+  li {
+    height: 50px;
+    @extend %d-flex;
+    align-items: center;
+
+  }
+}
+
+
+.header_main-menu_a {
+  @extend %paragrapgh-text;
+  opacity: 0.4;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    text-decoration-line: underline;
+  }
+}
 

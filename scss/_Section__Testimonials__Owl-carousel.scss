@@ -9,28 +9,26 @@
   height: 50px;
   position: relative;
   margin-right: 25px;
-  background-color: #fff;
+  background-color: #c4c4c4;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: darken(#c4c4c4,20%);
+  }
 }
 
 .owl-carousel.S_testimonials-slider .owl-nav button.owl-prev {
-  background-image: url("../images/arrow-left.png");
-}
-
-.owl-carousel.S_testimonials-slider .owl-nav button.owl-next {
-  background-image: url("../images/arrow-right.png");
+  transform: rotate(180deg);
 }
 
 .owl-carousel.S_testimonials-slider .owl-nav button.owl-prev span,
 .owl-carousel.S_testimonials-slider .owl-nav button.owl-next span {
-  visibility: hidden;
+  @extend %d-flex;
+  align-items: center;
 }
 
 .owl-carousel.S_testimonials-slider .owl-stage-outer {
   overflow: hidden;
 }
 
-.owl-carousel.owl-drag .owl-item.active{
-  width: 100%;
-}
 
 

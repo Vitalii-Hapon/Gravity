@@ -63,12 +63,17 @@
 .S_features_label_img {
   width: 54px;
   height: 54px;
-  border-radius: 50%;
-  overflow: hidden;
-}
+  background: url("../images/spritesheet.png") no-repeat;
+  display: block;
 
-.S_features_label_img .ava {
-  width: 100%;
+  @each $name, $x, $y in (top, -5px, -5px),
+          (bottom, -69px, -5px)
+
+  {
+    &__#{$name} {
+      background-position: $x $y;
+    }
+  }
 }
 
 .S_features_label_description {
