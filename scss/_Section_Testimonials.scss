@@ -9,11 +9,6 @@
   position: absolute;
 }
 
-
-.S_testimonials_slider {
-
-}
-
 .S_testimonials_item {
   @extend %space-between;
   height: 620px;
@@ -44,20 +39,4 @@
 .S_testimonials_item_right {
   height: 620px;
   width: 445px;
-}
-
-.hero {
-  $this: &;
-
-  &_title {
-    color: #000;
-  }
-
-  &_left-side {
-    #{$this}_title {
-      color: #fff;
-    }
-  }
-
-
 }

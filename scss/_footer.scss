@@ -3,27 +3,6 @@
   background: #515151;
   flex: 0 0 auto;
   padding: 0 125px;
-
-  &_link-icon {
-    width: 24px;
-    height: 24px;
-    background: url("../images/Icon/sprite-social-icons.png") no-repeat;
-    display: block;
-    transition: .2s;
-
-    &:hover {
-      opacity: .4;
-    }
-
-    @each $name, $x, $y in (twitter, -2px, -27px),
-            (facebook, -2px, -27px),
-            (facebook, -2px, -27px)
-    {
-      &__#{$name} {
-        background-position: $x $y;
-      }
-    }
-  }
 }
 
 .footer_top {
@@ -32,9 +11,23 @@
 }
 
 .footer_logo {
-  height: 28px;
+  width: 75px;
+  height: 24px;
   padding-top: 70px;
-}
+  transition: 0.2s ease-in-out;
+
+  &-icon {
+  background: url("../images/spritesheet.png") -5px -69px no-repeat;
+  display: block;
+  width: 75px;
+  height: 24px;
+
+  }
+  &:hover {
+    opacity: 0.4;
+    border-bottom: #ffffff 2px;
+  }
+  }
 
 .footer_top-menu {
   //height: 28px;
@@ -65,7 +58,7 @@ hr {
 .footer_top-menu_ul, .footer_submenu_ul {
 
   @extend %space-between;
-}
+ }
 
 .footer_top-menu_a, .footer_submenu_a {
   @extend %paragrapgh-text;
@@ -75,11 +68,21 @@ hr {
 
 .footer_top-menu_a {
   opacity: 1;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.4;
+    text-decoration-line: underline;
+    }
 }
 
 
 .footer_submenu_a {
-  opacity: 0.4;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+      text-decoration-line: underline;
+      transition: 0.2s ease-in-out;
+    }
 }
 
 
@@ -89,20 +92,28 @@ hr {
   @extend %space-between;
   margin-top: 40px;
   align-items: flex-end;
-  //opacity: 0.4;
 }
 
-//.icon {
-//  height: 14px;
-//}
-//
-//.icon-facebook {
-//  height: 15px;
-//}
-//
-//.linkedin {
-//  height: 16px;
-//}
+.footer_icon {
+  opacity: 0.4;
+  background: url("../images/spritesheet.png") no-repeat;
+  display: block;
+  transition: .2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+  @each $name, $width, $height, $x, $y in (twitter, 16px, 14px, -133px, -61px),
+          (linkedin, 16px, 16px, -133px, -5px),
+          (google, 14px, 14px, -111px, -94px),
+          (facebook, 8px, 15px, -111px, -69px)
+  {
+    &__#{$name} {
+      width: $width;
+      height: $height;
+      background-position: $x $y;
+    }
+  }
+  }
 
 .footer_top-menu_form {
   height: 40px;
@@ -157,13 +168,5 @@ hr {
 
 .footer_top-menu_form_your_email::placeholder {
   color: rgba(34, 34, 34, 0.5);
-}
-
-
-.footer_link-twitter {
-  width: 24px;
-  height: 24px;
-  background: url("../images/Icon/sprite-social-icons.png") -2px -27px no-repeat;
-  display: block;
 }
 
