@@ -1,0 +1,87 @@
+.S_works {
+  //height: 1256px;
+  margin-top: 202px;
+  padding: 0 125px;
+}
+
+.S_works_label {
+  width: 160px;
+  @extend %label-text;
+}
+
+.S_works_title-menu {
+  height: 48px;
+  @extend %space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.S_works_big-title {
+  width: 539px;
+  @extend %big-title;
+}
+
+.S_works_menu-gallery {
+  width: 470px;
+  @extend %space-between;
+}
+
+.S_works_gallery_button {
+  @extend %label-text;
+  opacity: 0.3;
+  &:hover {
+    opacity: 1;
+    color: #1434E1;
+  }
+}
+
+
+.S_works_gallery {
+  //height: 930px;
+  margin-top: 78px;
+  @extend %space-between;
+  flex-wrap: wrap;
+  display: none;
+
+  &__active {
+    display: flex;
+  }
+}
+
+.S_works_gallery-item {
+  width: 350px;
+  height: 450px;
+  margin-top: 30px;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    margin-top: 10px;
+    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.S_works_bellow-part {
+  @extend %space-between;
+  margin-top: 52px;
+  align-items: center;
+}
+
+.S_works_bellow-text {
+  @extend %paragrapgh-text;
+  height: 58px;
+  width: 730px;
+  vertical-align: top;
+
+}
+
+.S_works_see-works-btn {
+  @extend %button, %label-text;
+  width: 222px;
+  height: 50px;
+  opacity: 1;
+  background-color: #4737FF;
+  color: #ffffff;
+  &:hover {
+    background-color: #0f00b7;
+  }
+}

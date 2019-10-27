@@ -1,0 +1,84 @@
+.S_features {
+  height: 552px;
+  margin-top: 181px;
+  padding-right: 125px;
+  @extend %d-flex;
+  background: #F4F4F4;
+}
+
+.S_features_images {
+  width: 760px;
+  height: 552px;
+  @extend %d-flex;
+}
+
+.S_features_right-side {
+  box-sizing: border-box;
+  width: 475px;
+  height: 754px;
+  margin-left: auto;
+}
+
+.S_features-img_back {
+  height: 417px;
+  width: 570px;
+  background-image: url("../images/feature-back.png");
+}
+
+.S_features-img_front {
+  position: absolute;
+  margin-top: 99px;
+  margin-left: 315px;
+  height: 453px;
+  width: 350px;
+  background-image: url("../images/Hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+}
+
+.S_features_title {
+  height: 115px;
+  @extend %big-title;
+}
+
+.S_features_paragrapgh {
+  height: 105px;
+  margin-top: 13px;
+  @extend %paragrapgh-text;
+}
+
+.S_features_labeles {
+  margin-top: 62px;
+  height: 138px;
+  width: 273px;
+}
+
+.S_features_label {
+  @extend %d-flex;
+  height: 54px;
+  margin-bottom: 30px;
+}
+
+.S_features_label_img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.S_features_label_img .ava {
+  width: 100%;
+}
+
+.S_features_label_description {
+  margin-left: 29px;
+  @extend %d-flex;
+  align-items: center;
+}
+
+.S_features_label_description_name {
+  @extend %label-text;
+  color: #000000;
+  opacity: 1;
+}

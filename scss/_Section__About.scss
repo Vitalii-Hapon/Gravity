@@ -1,0 +1,70 @@
+.S_about {
+  height: 564px;
+  padding: 137px 125px 0 125px;
+  background-color: white;
+  display: flex;
+  background: #F4F4F4;
+}
+
+.S_about_img {
+  width: 475px;
+  height: 564px;
+  background-image: url("../images/About.png");
+}
+
+.S_about_right-side {
+  margin-left: auto;
+}
+
+.S_about_title {
+  width: 540px;
+  margin-top: 37px;
+  @extend %big-title;
+}
+
+.S_about_paragrapgh_top,
+.S_about_paragrapgh_bottom {
+  width: 445px;
+  margin-right: 95px;
+  @extend %paragrapgh-text;
+}
+
+.S_about_paragrapgh_top {
+  margin-top: 30px;
+}
+
+.S_about_paragrapgh_bottom {
+  margin-top: 20px;
+}
+
+.S_about_worker {
+  margin-top: 61px;
+  height: 65px;
+  width: 285px;
+  margin-right: 255px;
+  @extend %d-flex;
+}
+
+.S_about_worker_ava {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.S_about_worker_ava .ava {
+  width: 100%;
+}
+
+.S_about_worker_description {
+  margin-left: 31px;
+}
+
+.S_about_worker_name {
+  @extend %title;
+}
+
+.S_about_worker_job {
+  margin-top: 6px;
+  @extend %paragrapgh-text;
+}

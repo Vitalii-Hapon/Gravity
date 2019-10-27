@@ -1,0 +1,37 @@
+.owl-carousel.S_services-slider .owl-nav {
+  margin-top: 50px;
+}
+
+.owl-carousel.S_services-slider .owl-nav button.owl-prev,
+.owl-carousel.S_services-slider .owl-nav button.owl-next {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 25px;
+  background-color: #fff;
+}
+
+.owl-carousel.S_services-slider .owl-nav button.owl-prev {
+  background-image: url("../images/arrow-left.png");
+}
+
+.owl-carousel.S_services-slider .owl-nav button.owl-next {
+  background-image: url("../images/arrow-right.png");
+}
+
+.owl-carousel.S_services-slider .owl-nav button.owl-prev span,
+.owl-carousel.S_services-slider .owl-nav button.owl-next span {
+  visibility: hidden;
+}
+
+.owl-carousel.S_services-slider .owl-stage-outer {
+  overflow: visible;
+}
+
+.owl-carousel.owl-drag .owl-item.active{
+  width: 100%;
+}
+
+.owl-carousel.S_services-slider .owl-item.active + .owl-item.active {
+  opacity: .4;
+}

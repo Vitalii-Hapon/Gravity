@@ -1,0 +1,50 @@
+@import "base";
+
+.container {
+  width: 1360px;
+  height: 100%;
+  background: #000;
+  margin: 0 auto;
+  @extend %d-flex;
+  flex-direction: column;
+  //@extend %d-flex_s-between;
+}
+
+.content {
+  flex: 1 0 auto;
+  background: #F4F4F4;
+}
+
+@import "header";
+
+@import "footer";
+
+@import "Section__Hero";
+
+@import "Section__About";
+
+@import "Section__Services";
+
+@import "Section__Services__Owl-carousel";
+
+@import "Section_Features";
+
+@import "Section_Works";
+
+@import "Section_Testimonials";
+
+@import "Section__Testimonials__Owl-carousel";
+
+.clients {
+  height: 480px;
+}
+
+//.test {
+//  background: black;
+//}
+//
+//.test .random {
+//  background: #fff;
+//}
+
+
