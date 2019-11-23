@@ -51,7 +51,7 @@ body {
   color: #222222; }
 
 .container {
-  width: 1360px;
+  max-width: 1360px;
   height: 100%;
   background: #000;
   margin: 0 auto;
@@ -60,6 +60,61 @@ body {
 .content {
   flex: 1 0 auto;
   background: #F4F4F4; }
+
+.clients {
+  height: 480px; }
+
+html,
+body {
+  height: 100%; }
+
+*, h1, h2, h3, a, p, li {
+  font-family: 'Fira Sans', sans-serif; }
+
+.header, .footer_bottom, .footer_top-menu_ul, .footer_submenu_ul, .footer_icon-menu_ul, .footer_top-menu_form, .S_hero, .S_works_title-menu, .S_works_menu-gallery, .S_works_bellow-part, .S_testimonials_item, .container, .header_search, .header_main-menu_ul, .header_main-menu_ul li, .footer_top, .S_about_worker, .owl-carousel.S_services-slider .owl-nav button.owl-prev span,
+.owl-carousel.S_services-slider .owl-nav button.owl-next span, .S_features, .S_features_images, .S_features_label, .S_features_label_description, .S_works_gallery, .owl-carousel.S_testimonials-slider .owl-nav button.owl-prev span,
+.owl-carousel.S_testimonials-slider .owl-nav button.owl-next span {
+  display: flex; }
+
+.header, .footer_bottom, .footer_top-menu_ul, .footer_submenu_ul, .footer_icon-menu_ul, .footer_top-menu_form, .S_hero, .S_works_title-menu, .S_works_menu-gallery, .S_works_bellow-part, .S_testimonials_item {
+  justify-content: space-between; }
+
+.header_icon__search-btn, .header_icon__main-menu-btn, .footer_top-menu_form_send-btn, .S_hero_get-started-btn, .S_works_see-works-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  transition: 0.2s ease-in-out; }
+
+.header_main-menu_a, .footer_top-menu_a, .footer_submenu_a, .S_hero_text, .S_about_paragrapgh_top,
+.S_about_paragrapgh_bottom, .S_about_worker_job, .S_features_paragrapgh, .S_works_bellow-text, .S_testimonials_paragrapgh {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  color: #222222; }
+
+.S_hero_get-started-btn, .S_services_label, .S_features_label_description_name, .S_works_label, .S_works_gallery_button, .S_works_see-works-btn, .S_testimonials_label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 4px;
+  color: #222222;
+  opacity: 0.7;
+  text-transform: uppercase; }
+
+.S_about_worker_name, .S_testimonials_title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #222222; }
+
+.S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #222222; }
 
 .header {
   height: 142px;
@@ -107,7 +162,7 @@ body {
   opacity: 1;
   text-decoration: #c4c4c4; }
   .header_input-search.header_active-search:hover, .header_input-search.header_active-search:active {
-    box-shadow: 0px 0px 5px 3px #c4c4c4; }
+    box-shadow: 0 0 5px 3px #c4c4c4; }
 
 .header_main-menu_nav {
   position: absolute;
@@ -139,6 +194,9 @@ body {
     opacity: 1;
     text-decoration-line: underline; }
 
+@media screen and (min-width: 1199px) {
+  .header {
+    padding: 0 40px; } }
 .footer {
   height: 240px;
   background: #515151;
@@ -669,8 +727,5 @@ hr {
 
 .owl-carousel.S_testimonials-slider .owl-stage-outer {
   overflow: hidden; }
-
-.clients {
-  height: 480px; }
 
 /*# sourceMappingURL=styles.css.map */
