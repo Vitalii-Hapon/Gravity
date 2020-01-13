@@ -1,13 +1,16 @@
 .S_hero {
   height: 840px;
-  background-color: white;
-  padding-left: 125px;
   @extend %space-between;
   background: #F4F4F4;
+  padding-left: 125px;
+}
+
+.S_hero_left-side {
+  width: 100%;
 }
 
 .S_hero_title {
-  width: 474px;
+  width: 100%;
   font-size: 60px;
   font-weight: bold;
   line-height: 70px;
@@ -69,11 +72,13 @@
 }
 
 .S_hero-img {
-  width: 665px;
+  width: 100%;
+  max-width: 50%;
   height: 840px;
-  background-image: url("../images/Hero.png");
+  background: url("../images/Hero.png") center no-repeat;
   margin-left: auto;
-}
+  background-size: cover;
+  }
 
 .S_hero-video {
   position: absolute;
@@ -85,3 +90,36 @@
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 }
 
+@media screen and (max-width: 1199px) {
+  .S_hero {
+    padding-left: 110px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .S_hero {
+    padding-left: 85px;
+  }
+  .S_hero-img {
+    width: 0;
+  }
+  .S_hero_title {
+    font-size: 50px;
+    line-height: 50px;
+    //letter-spacing: -1px;
+    padding-top: 47px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .S_hero {
+    padding-left: 50px;
+  }
+ }
+
+@media screen and (max-width: 500px) {
+  .S_hero {
+    padding-left: 20px;
+  }
+
+}
