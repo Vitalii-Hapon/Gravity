@@ -66,8 +66,8 @@ body {
 
 @media screen and (max-width: 991px) {
   %paragrapgh-text {
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 26px;
   }
   %label-text {
     font-size: 13px;
@@ -75,20 +75,20 @@ body {
     letter-spacing: 3.5px;
   }
   %title {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 29px;
   }
   %big-title {
     font-size: 28px;
     font-weight: 500;
-    line-height: 38px;
+    line-height: 42px;
   }
 }
 
 @media screen and (max-width: 767px) {
   %paragrapgh-text {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 25px;
   }
   %label-text {
     font-size: 12px;
@@ -97,35 +97,34 @@ body {
     letter-spacing: 3px;
   }
   %title {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 28px;
   }
   %big-title {
-    font-size: 26px;
-
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
 @media screen and (max-width: 500px) {
   %paragrapgh-text {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 23px;
   }
   %label-text {
     font-size: 10px;
-    line-height: 21px;
+    line-height: 20px;
     letter-spacing: 2.5px;
   }
   %title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 26px;
   }
   %big-title {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
-    line-height: 33px;
+    line-height: 31px;
   }
 }

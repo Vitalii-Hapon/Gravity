@@ -97,39 +97,46 @@
 
 @media screen and (max-width: 1199px) {
   .S_hero {
-    padding-left: 100px;
+    padding-left: 75px;
   }
   .S_hero-video {
-    margin-left: 365px;
+    margin-left: 30vw;
+  }
+  .S_hero_title {
+    padding-top: 25px
+  }
+  .S_hero-img {
+    width: 100vw;
+    max-width: 840px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .S_hero {
-    padding-left: 75px;
+    padding-left: 50px;
   }
   .S_hero_title {
     font-size: 45px;
     line-height: 60px;
-    padding-top: 40px
+    padding-top: 15px
   }
   .S_hero_get-started-btn {
     margin-top: 45px;
   }
   .S_hero-video {
-    margin-left: 285px;
+    margin-left: 25%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .S_hero {
-    padding-left: 50px;
+    padding-left: 35px;
     height: 700px;
   }
   .S_hero_title {
     font-size: 35px;
     line-height: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .S_hero_left-side {
     max-width: 100%;
@@ -159,13 +166,13 @@
 
 @media screen and (max-width: 500px) {
   .S_hero {
-    padding-left: 25px;
+    padding-left: 20px;
   }
   .S_hero_title {
     font-size: 25px;
     line-height: 30px;
-    padding-top: 30px
   }
+
   .S_hero_text {
     margin-top: 30px;
   }
