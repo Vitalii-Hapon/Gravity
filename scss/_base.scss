@@ -3,9 +3,9 @@ body {
   height: 100%;
 }
 
-*, h1, h2, h3, a, p, li {
+*, h1, h2, h3, a, p, li, ul {
   font-family: 'Fira Sans', sans-serif;
-  }
+}
 
 %d-flex {
   display: flex;
@@ -57,3 +57,75 @@ body {
   color: #222222;
 }
 
+@media screen and (max-width: 1199px) {
+  %big-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  %paragrapgh-text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  %label-text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 3.5px;
+  }
+  %title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  %big-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  %paragrapgh-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  %label-text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 3px;
+  }
+  %title {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  %big-title {
+    font-size: 26px;
+
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  %paragrapgh-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  %label-text {
+    font-size: 10px;
+    line-height: 21px;
+    letter-spacing: 2.5px;
+  }
+  %title {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  %big-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+}

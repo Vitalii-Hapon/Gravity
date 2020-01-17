@@ -13,8 +13,8 @@
 }
 
 .S_about_right-side {
-  margin-left: auto;
-}
+  margin-left: 94px;
+ }
 
 .S_about_title {
   width: 540px;
@@ -25,7 +25,7 @@
 .S_about_paragrapgh_top,
 .S_about_paragrapgh_bottom {
   width: 445px;
-  margin-right: 95px;
+  margin-right: auto;
   @extend %paragrapgh-text;
 }
 
@@ -41,7 +41,7 @@
   margin-top: 61px;
   height: 65px;
   width: 285px;
-  margin-right: 255px;
+  margin-right: auto;
   @extend %d-flex;
 }
 
@@ -67,4 +67,61 @@
 .S_about_worker_job {
   margin-top: 6px;
   @extend %paragrapgh-text;
+}
+
+@media screen and (max-width: 1199px) {
+  .S_about {
+    padding: 110px 100px 0 100px;
+  }
+  .S_about_title {
+    margin-top: 25px;
+  }
+  .S_about_right-side {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .S_about {
+    padding: 80px 75px 0 75px;
+  }
+  .S_about_title {
+    margin-top: 15px;
+  }
+  .S_about_right-side {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .S_about_img {
+    width: 0;
+  }
+  .S_about {
+    padding: 55px 50px 0 50px;
+    height: 425px;
+  }
+  .S_about_title {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .S_about_right-side {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .S_about_paragrapgh_top, .S_about_paragrapgh_bottom
+  {
+    margin: 30px auto 0 auto;
+    text-align: center;
+  }
+  .S_about_worker {
+    margin: 30px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .S_about {
+    padding: 35px 25px 0 25px;
+  }
 }
