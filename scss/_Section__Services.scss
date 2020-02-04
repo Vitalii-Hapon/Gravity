@@ -1,5 +1,5 @@
 .S_services {
-  height: 1104px;
+  max-height: 1104px;
   box-sizing: border-box;
   padding: 142px 0 0 125px;
   background-color: white;
@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 991px) {
   .S_services {
-    padding: 80px 50px 0 50px;
+    padding: 80px 40px 0 40px;
   }
 
   .S_services_list {

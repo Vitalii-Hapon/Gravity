@@ -86,3 +86,39 @@
     background-color: #0f00b7;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .S_works {
+    margin-top: 110px;
+    padding: 0 75px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .S_works {
+    margin-top: 90px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .S_works {
+    margin-top: 45px;
+    padding: 0 35px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .S_works {
+    margin-top: 30px;
+    padding: 0 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .S_works {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+}

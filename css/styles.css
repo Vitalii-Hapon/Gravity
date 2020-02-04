@@ -49,7 +49,7 @@ body {
   line-height: 32px;
   color: #222222; }
 
-.S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+.S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
@@ -57,7 +57,7 @@ body {
   color: #222222; }
 
 @media screen and (max-width: 1199px) {
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 32px;
     line-height: 40px; } }
 @media screen and (max-width: 991px) {
@@ -75,7 +75,7 @@ body {
     font-size: 19px;
     line-height: 29px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 28px;
     font-weight: 500;
     line-height: 42px; } }
@@ -96,7 +96,7 @@ body {
     font-weight: 400;
     line-height: 28px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 24px;
     line-height: 34px; } }
 @media screen and (max-width: 500px) {
@@ -115,7 +115,7 @@ body {
     font-weight: 300;
     line-height: 26px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 21px;
     font-weight: 500;
     line-height: 31px; } }
@@ -189,7 +189,7 @@ body {
   line-height: 32px;
   color: #222222; }
 
-.S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+.S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
@@ -197,7 +197,7 @@ body {
   color: #222222; }
 
 @media screen and (max-width: 1199px) {
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 32px;
     line-height: 40px; } }
 @media screen and (max-width: 991px) {
@@ -215,7 +215,7 @@ body {
     font-size: 19px;
     line-height: 29px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 28px;
     font-weight: 500;
     line-height: 42px; } }
@@ -236,7 +236,7 @@ body {
     font-weight: 400;
     line-height: 28px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 24px;
     line-height: 34px; } }
 @media screen and (max-width: 500px) {
@@ -255,7 +255,7 @@ body {
     font-weight: 300;
     line-height: 26px; }
 
-  .S_about_title, .S_services_big-title, .S_features_title, .S_works_big-title, .S_testimonials_big-title {
+  .S_about_title, .S_services_big-title, .S_features_title, .S_features_label, .S_works_big-title, .S_testimonials_big-title {
     font-size: 21px;
     font-weight: 500;
     line-height: 31px; } }
@@ -367,7 +367,7 @@ body {
     height: 40px; } }
 @media screen and (max-width: 991px) {
   .header {
-    padding: 0 50px;
+    padding: 0 40px;
     height: 85px; }
 
   .header_main-menu_nav {
@@ -647,7 +647,7 @@ hr {
     max-width: 840px; } }
 @media screen and (max-width: 991px) {
   .S_hero {
-    padding-left: 50px; }
+    padding-left: 40px; }
 
   .S_hero_title {
     font-size: 45px;
@@ -770,7 +770,7 @@ hr {
     margin-left: 70px; } }
 @media screen and (max-width: 991px) {
   .S_about {
-    padding: 80px 50px 0 50px; }
+    padding: 80px 40px 0 40px; }
 
   .S_about_title {
     margin-top: 15px; }
@@ -805,7 +805,7 @@ hr {
   .S_about {
     padding: 35px 20px 0 20px; } }
 .S_services {
-  height: 1104px;
+  max-height: 1104px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 142px 0 0 125px;
@@ -856,7 +856,7 @@ hr {
     margin-right: 40px; } }
 @media screen and (max-width: 991px) {
   .S_services {
-    padding: 80px 50px 0 50px; }
+    padding: 80px 40px 0 40px; }
 
   .S_services_list {
     min-width: 320px; }
@@ -972,26 +972,25 @@ hr {
     width: 30px;
     height: 30px; } }
 .S_features {
-  height: 552px;
   margin-top: 181px;
   padding-right: 125px;
   background: #F4F4F4; }
 
 .S_features_images {
-  width: 760px;
-  height: 552px; }
+  width: 760px; }
 
 .S_features_right-side {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 475px;
-  height: 754px;
   margin-left: auto; }
 
 .S_features-img_back {
   height: 417px;
   width: 570px;
-  background-image: url("../images/feature-back.png"); }
+  background-image: url("../images/feature-back.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .S_features-img_front {
   position: absolute;
@@ -1006,10 +1005,10 @@ hr {
           box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25); }
 
 .S_features_title {
-  height: 115px; }
+  min-height: 115px; }
 
 .S_features_paragrapgh {
-  height: 105px;
+  min-height: 105px;
   margin-top: 13px; }
 
 .S_features_labeles {
@@ -1041,21 +1040,91 @@ hr {
   color: #000000;
   opacity: 1; }
 
+@media screen and (max-width: 1300px) {
+  .S_features {
+    padding-right: 100px; } }
 @media screen and (max-width: 1199px) {
   .S_features {
     padding-right: 75px;
-    margin-top: 100px; } }
+    margin-top: 110px;
+    min-height: 40vw; }
+
+  .S_features_title {
+    min-height: 90px; }
+
+  .S_features-img_front {
+    width: 29vw;
+    height: 37vw;
+    margin-top: 7vw;
+    margin-left: 26vw;
+    min-height: 320px; }
+
+  .S_features-img_back {
+    width: 50vw;
+    height: 35vw;
+    min-width: 248px; }
+
+  .S_features_labeles {
+    margin-top: 25px; }
+
+  .S_features_label {
+    margin-bottom: 25px; } }
 @media screen and (max-width: 991px) {
   .S_features {
-    padding-right: 50px;
-    margin-top: 75px; } }
+    padding-right: 40px;
+    margin-top: 80px; }
+
+  .S_features_title {
+    min-height: 80px; }
+
+  .S_features_labeles {
+    margin-top: 20px; }
+
+  .S_features_label {
+    margin-bottom: 12px; }
+
+  .S_features_paragrapgh {
+    margin-top: 10px; }
+
+  .S_features-img_front {
+    margin-left: 24vw; }
+
+  .S_features-img_back {
+    width: 48vw;
+    height: 34vw; } }
 @media screen and (max-width: 767px) {
   .S_features {
-    padding-right: 35px;
-    margin-top: 50px; } }
+    padding: 0 35px 0 35px;
+    margin-top: 55px;
+    min-height: 0; }
+
+  .S_features-img_front {
+    width: 0;
+    height: 0;
+    min-width: 0;
+    min-height: 0; }
+
+  .S_features-img_back {
+    width: 0;
+    height: 0; }
+
+  .S_features_images {
+    width: 0; }
+
+  .S_features_right-side {
+    width: 100%; }
+
+  .S_features_title {
+    min-height: 0;
+    text-align: center; }
+
+  .S_features_paragrapgh {
+    text-align: center;
+    margin-top: 10px;
+    min-height: 0; } }
 @media screen and (max-width: 500px) {
   .S_features {
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
     margin-top: 35px; } }
 .S_works {
   margin-top: 202px;
@@ -1125,6 +1194,26 @@ hr {
   .S_works_see-works-btn:hover {
     background-color: #0f00b7; }
 
+@media screen and (max-width: 1199px) {
+  .S_works {
+    margin-top: 110px;
+    padding: 0 75px; } }
+@media screen and (max-width: 991px) {
+  .S_works {
+    margin-top: 90px;
+    padding: 0 40px; } }
+@media screen and (max-width: 870px) {
+  .S_works {
+    margin-top: 45px;
+    padding: 0 35px; } }
+@media screen and (max-width: 767px) {
+  .S_works {
+    margin-top: 30px;
+    padding: 0 35px; } }
+@media screen and (max-width: 500px) {
+  .S_works {
+    margin-top: 20px;
+    padding: 0 20px; } }
 .S_testimonials {
   height: 1256px;
   padding: 0 125px;
