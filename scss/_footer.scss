@@ -8,6 +8,7 @@
 .footer_top {
   height: 140px;
   @extend %d-flex;
+  justify-content: space-between;
 }
 
 .footer_logo {
@@ -17,23 +18,24 @@
   transition: 0.2s ease-in-out;
 
   &-icon {
-  background: url("../images/spritesheet.png") -5px -69px no-repeat;
-  display: block;
-  width: 75px;
-  height: 24px;
+    background: url("../images/spritesheet.png") -5px -69px no-repeat;
+    display: block;
+    width: 75px;
+    height: 24px;
 
   }
+
   &:hover {
     opacity: 0.4;
     border-bottom: #ffffff 2px;
   }
-  }
+}
 
 .footer_top-menu {
   //height: 28px;
   width: 540px;
   margin-left: 114px;
-  padding-top: 65.5px;
+  padding-top: 67px;
   vertical-align: top;
 }
 
@@ -58,7 +60,7 @@ hr {
 .footer_top-menu_ul, .footer_submenu_ul {
 
   @extend %space-between;
- }
+}
 
 .footer_top-menu_a, .footer_submenu_a {
   @extend %paragrapgh-text;
@@ -69,20 +71,22 @@ hr {
 .footer_top-menu_a {
   opacity: 1;
   transition: 0.2s ease-in-out;
+
   &:hover {
     opacity: 0.4;
     text-decoration-line: underline;
-    }
+  }
 }
 
 
 .footer_submenu_a {
-    opacity: 0.4;
-    &:hover {
-      opacity: 1;
-      text-decoration-line: underline;
-      transition: 0.2s ease-in-out;
-    }
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+    text-decoration-line: underline;
+    transition: 0.2s ease-in-out;
+  }
 }
 
 
@@ -99,21 +103,22 @@ hr {
   background: url("../images/spritesheet.png") no-repeat;
   display: block;
   transition: .2s ease-in-out;
+
   &:hover {
     opacity: 1;
   }
+
   @each $name, $width, $height, $x, $y in (twitter, 16px, 14px, -133px, -61px),
           (linkedin, 16px, 16px, -133px, -5px),
           (google, 14px, 14px, -111px, -94px),
-          (facebook, 8px, 15px, -111px, -69px)
-  {
+          (facebook, 8px, 15px, -111px, -69px) {
     &__#{$name} {
       width: $width;
       height: $height;
       background-position: $x $y;
     }
   }
-  }
+}
 
 .footer_top-menu_form {
   height: 40px;
@@ -168,5 +173,129 @@ hr {
 
 .footer_top-menu_form_your_email::placeholder {
   color: rgba(34, 34, 34, 0.5);
+}
+
+@media screen and (max-width: 1300px) {
+  .footer_top-menu {
+    margin-left: 0;
+  }
+  .footer_top-menu_form {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    height: 180px;
+    padding: 0 75px;
+  }
+  .footer_top {
+    height: 100px;
+  }
+  .footer_logo {
+    padding-top: 50px;
+  }
+
+  .footer_top-menu {
+    padding-top: 47px;
+    max-width: 540px;
+    width: 45vw;
+  }
+  .footer_top-menu_form {
+    margin-top: 39px;
+  }
+  .footer_top-menu_form_your_email {
+    max-width: 170px;
+    min-width: 130px;
+    width: 17vw;
+  }
+  .footer_top-menu_form_send-btn {
+    max-width: 100px;
+    min-width: 70px;
+    width: 9vw;
+  }
+  .footer_bottom {
+    height: 80px;
+  }
+  .footer_submenu {
+    margin-top: 25px;
+  }
+  .footer_icon-menu_ul {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 0 40px;
+    height: 150px;
+  }
+  .footer_top {
+    height: 80px;
+  }
+  .footer_logo {
+    padding-top: 35px;
+  }
+  .footer_top-menu {
+    padding-top: 32px;
+  }
+  .footer_top-menu_form {
+    margin-top: 27px;
+  }
+  .footer_top-menu_form_your_email {
+    padding: 0 15px;
+  }
+  .footer_bottom {
+    height: 70px;
+  }
+  .footer_submenu {
+    margin-top: 20px;
+  }
+  .footer_icon-menu_ul {
+    margin-top: 25px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 0 35px;
+
+  }
+  .footer_top {
+    height: 80px;
+  }
+  .footer_logo {
+    padding-top: 35px;
+  }
+  .footer_top-menu {
+    padding-top: 32px;
+  }
+  .footer_top-menu_form {
+    margin-top: 27px;
+  }
+  .footer_top-menu_form_your_email {
+    padding: 0 15px;
+  }
+  .footer_bottom {
+    height: 70px;
+  }
+  .footer_submenu {
+    margin-top: 20px;
+  }
+  .footer_icon-menu_ul {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 0 20px;
+  }
+  .footer_top-menu_form {
+    margin-left: 0;
+  }
 }
 

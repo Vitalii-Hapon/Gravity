@@ -1,7 +1,7 @@
 .S_testimonials {
-  height: 1256px;
-  padding: 0 125px;
-  margin-top: 248px;
+  //height: 620px;
+  padding: 248px 125px 175px 125px;
+  //margin-top: 248px;
 }
 
 .S_testimonials_label {
@@ -11,32 +11,109 @@
 
 .S_testimonials_item {
   @extend %space-between;
-  height: 620px;
+  //height: 620px;
 }
 
 .S_testimonials_item_left-part {
   width: 540px;
+  @extend %d-flex;
+  flex-direction: column;
+  padding-right: 30px;
 }
 
 .S_testimonials_big-title {
   @extend %big-title;
-  height: 204px;
+  //height: 204px;
   margin-top: 93px;
+  height: 100%;
 }
 
 .S_testimonials_title {
   @extend %title;
-  height: 32px;
-  margin-top: 121px;
+  //height: 32px;
+  margin-bottom: 13px;
 }
 
 .S_testimonials_paragrapgh {
   @extend %paragrapgh-text;
-  height: 25px;
-  margin-top: 13px;
+  //height: 25px;
+  margin-bottom: 132px;
 }
 
 .S_testimonials_item_right {
-  height: 620px;
+  //height: 620px;
   width: 445px;
+}
+
+.S_testimonials_item_center {
+  //visibility: hidden;
+  width: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .S_testimonials {
+    padding: 120px 75px 85px 75px;
+  }
+  .S_testimonials_title {
+    margin-bottom: 10px;
+  }
+  .S_testimonials_paragrapgh {
+    margin-bottom: 115px;
+  }
+  .S_testimonials_big-title {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .S_testimonials {
+    padding: 100px 40px 80px 40px;
+  }
+  .S_testimonials_paragrapgh {
+    margin-bottom: 80px;
+  }
+  .S_testimonials_big-title {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .S_testimonials {
+    padding: 50px 35px 45px 35px;
+  }
+  .S_testimonials_item_right {
+    //visibility: hidden;
+    width: 0;
+  }
+  .S_testimonials_item_center {
+    visibility: visible;
+    width: 250px;
+    margin-top: 35px;
+
+  }
+  .S_testimonials_big-title {
+    text-align: center;
+  }
+  .S_testimonials_title {
+    margin-top: 20px;
+  }
+  .S_testimonials_paragrapgh {
+    margin-bottom: 0;
+  }
+  .S_testimonials_item_left-part {
+    align-items: center;
+    padding-right: 0;
+  }
+  .S_testimonials_paragrapgh {
+    margin-bottom: 0;
+  }
+  .S_testimonials_item {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .S_testimonials {
+    padding: 40px 20px 40px 20px;
+  }
 }
