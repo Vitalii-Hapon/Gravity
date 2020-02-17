@@ -1,12 +1,16 @@
 @import "base";
 
 .header {
-  height: 142px;
-  @extend %space-between;
-  align-items: center;
+
   padding: 0 125px;
   flex: 0 0 auto;
   background: #F4F4F4;
+}
+
+.header-main {
+  @extend %space-between;
+  align-items: center;
+  height: 142px;
 }
 
 .header_icon {
@@ -63,9 +67,8 @@
 }
 
 .header_main-menu_nav {
-  position: absolute;
-  top: 142px;
   width: 0;
+  height: 0;
   opacity: 0;
   border: 0;
   transition: 0.6s;
@@ -73,23 +76,28 @@
 
 .header_main-menu_nav.header_main-menu_nav_active {
   opacity: 1;
-  width: 120px;
+  width: 100%;
   background-color: #f4F4F4;
-  margin-left: -60px;
+ }
 
+.header_main-menu_nav_active {
+min-height: 60px;
 }
 
 .header_main-menu_ul {
   @extend %d-flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 26px;
+  justify-content: space-between;
 
   li {
-    height: 50px;
     @extend %d-flex;
     align-items: center;
+    height: 50px;
+    margin-right: 25px;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
+
 }
 
 .header_main-menu_a {
@@ -107,52 +115,56 @@
 @media screen and (max-width: 1199px) {
   .header {
     padding: 0 75px;
+  }
+
+  .header-main {
     height: 110px;
   }
-  .header_main-menu_nav {
-    top: 110px;
-  }
-  .header_main-menu_ul {
-    li {
-      height: 40px;
-    }
-  }
+
+  .header_main-menu_nav_active {
+    min-height: 50px;
 }
+  .header_main-menu_ul li{
+    height: 40px;
+  }
+ }
 
 @media screen and (max-width: 991px) {
   .header {
     padding: 0 40px;
+    }
+
+  .header-main {
     height: 85px;
   }
-  .header_main-menu_nav {
-    top: 85px;
+
+  .header_main-menu_nav_active {
+    min-height: 45px;
   }
-  .header_main-menu_ul {
-    li {
+
+  .header_main-menu_ul li {
       height: 35px;
     }
-  }
 }
 
 
 @media screen and (max-width: 767px) {
   .header {
     padding: 0 35px;
+  }
+
+  .header-main {
     height: 70px;
   }
-  .header_main-menu_nav {
-    top: 70px;
+
+  .header_main-menu_nav_active {
+    min-height: 36px;
   }
-  .header_main-menu_ul {
-    li {
+  .header_main-menu_ul li {
       height: 30px;
-    }
-  }
-  .header_main-menu_nav.header_main-menu_nav_active {
-    opacity: 1;
-    a {
-    opacity: 1;
-    }
+   }
+  .header_main-menu_ul {
+    flex-wrap: wrap;
   }
 }
 
@@ -160,14 +172,17 @@
 @media screen and (max-width: 500px) {
   .header {
     padding: 0 20px;
+  }
+
+  .header-main {
     height: 45px;
   }
-  .header_main-menu_nav {
-    top: 45px;
+
+  .header_main-menu_nav_active {
+    min-height: 29px;
   }
-  .header_main-menu_ul {
-    li {
-      height: 25px;
-    }
-  }
+
+  .header_main-menu_ul li {
+     height: 25px;
+     }
 }

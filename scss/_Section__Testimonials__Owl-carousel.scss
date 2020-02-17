@@ -49,11 +49,16 @@
 @media screen and (max-width: 767px) {
   .owl-carousel.S_testimonials-slider .owl-nav {
     margin-top: -35px;
-  }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+
   .owl-carousel.S_testimonials-slider .owl-nav button.owl-prev,
   .owl-carousel.S_testimonials-slider .owl-nav button.owl-next {
     width: 35px;
     height: 35px;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 600px) {
