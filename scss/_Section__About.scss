@@ -1,6 +1,6 @@
 .S_about {
-  height: 564px;
-  padding: 137px 125px 0 125px;
+  min-height: 564px;
+  padding: 137px 0 0 125px;
   background-color: white;
   display: flex;
   background: #F4F4F4;
@@ -17,14 +17,14 @@
  }
 
 .S_about_title {
-  width: 540px;
+  max-width: 540px;
   margin-top: 37px;
   @extend %big-title;
 }
 
 .S_about_paragrapgh_top,
 .S_about_paragrapgh_bottom {
-  width: 445px;
+  max-width: 445px;
   margin-right: auto;
   @extend %paragrapgh-text;
 }
@@ -40,7 +40,7 @@
 .S_about_worker {
   margin-top: 61px;
   height: 65px;
-  width: 285px;
+  max-width: 285px;
   margin-right: auto;
   @extend %d-flex;
 }
@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 1199px) {
   .S_about {
-    padding: 110px 100px 0 100px;
+    padding: 110px 75px 0 75px;
   }
   .S_about_title {
     margin-top: 25px;
@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 991px) {
   .S_about {
-    padding: 80px 75px 0 75px;
+    padding: 80px 40px 0 40px;
   }
   .S_about_title {
     margin-top: 15px;
@@ -96,10 +96,11 @@
 @media screen and (max-width: 767px) {
   .S_about_img {
     width: 0;
+    height: 0;
   }
   .S_about {
-    padding: 55px 50px 0 50px;
-    height: 425px;
+    padding: 55px 35px 0 35px;
+    min-height: 390px;
   }
   .S_about_title {
     margin-top: 0;
@@ -122,6 +123,7 @@
 
 @media screen and (max-width: 500px) {
   .S_about {
-    padding: 35px 25px 0 25px;
+    padding: 35px 20px 0 20px;
   }
 }
+

@@ -1,5 +1,5 @@
 .S_features {
-  height: 552px;
+  //height: 552px;
   margin-top: 181px;
   padding-right: 125px;
   @extend %d-flex;
@@ -8,14 +8,14 @@
 
 .S_features_images {
   width: 760px;
-  height: 552px;
+  //height: 552px;
   @extend %d-flex;
 }
 
 .S_features_right-side {
   box-sizing: border-box;
   width: 475px;
-  height: 754px;
+  //height: 754px;
   margin-left: auto;
 }
 
@@ -23,6 +23,8 @@
   height: 417px;
   width: 570px;
   background-image: url("../images/feature-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .S_features-img_front {
@@ -38,12 +40,12 @@
 }
 
 .S_features_title {
-  height: 115px;
+  min-height: 115px;
   @extend %big-title;
 }
 
 .S_features_paragrapgh {
-  height: 105px;
+  min-height: 105px;
   margin-top: 13px;
   @extend %paragrapgh-text;
 }
@@ -55,10 +57,11 @@
 }
 
 .S_features_label {
-  @extend %d-flex;
-  height: 54px;
-  margin-bottom: 30px;
-}
+   @extend %d-flex;
+   height: 54px;
+   margin-bottom: 30px;
+   @extend %big-title;
+ }
 
 .S_features_label_img {
   width: 54px;
@@ -67,9 +70,7 @@
   display: block;
 
   @each $name, $x, $y in (top, -5px, -5px),
-          (bottom, -69px, -5px)
-
-  {
+          (bottom, -69px, -5px) {
     &__#{$name} {
       background-position: $x $y;
     }
@@ -86,4 +87,110 @@
   @extend %label-text;
   color: #000000;
   opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .S_features {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .S_features {
+    padding-right: 75px;
+    margin-top: 110px;
+    min-height: 40vw;
+  }
+  .S_features_title {
+    min-height: 90px;
+  }
+  .S_features-img_front {
+    width: 29vw;
+    height: 37vw;
+    margin-top: 7vw;
+    margin-left: 26vw;
+    min-height: 320px;
+
+  }
+
+  .S_features-img_back {
+    width: 50vw;
+    height: 35vw;
+    //min-height: 317px;
+    min-width: 248px;
+   }
+
+  .S_features_labeles {
+    margin-top: 25px;
+  }
+  .S_features_label {
+    margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .S_features {
+    padding-right: 40px;
+    margin-top: 80px;
+  }
+  .S_features_title {
+    min-height: 80px;
+  }
+  .S_features_labeles {
+    margin-top: 20px;
+  }
+  .S_features_label {
+    margin-bottom: 12px;
+  }
+  .S_features_paragrapgh {
+    margin-top: 10px;
+  }
+  .S_features-img_front {
+    margin-left: 24vw;
+  }
+  .S_features-img_back {
+    width: 48vw;
+    height: 34vw;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .S_features {
+    padding: 0 35px 0 35px;
+    margin-top: 55px;
+    min-height: 0;
+  }
+  .S_features-img_front {
+    width: 0;
+    height: 0;
+    min-width: 0;
+    min-height: 0;
+  }
+  .S_features-img_back {
+    width: 0;
+    height: 0;
+  }
+  .S_features_images {
+    width: 0;
+  }
+  .S_features_right-side {
+    width: 100%;
+  }
+  .S_features_title {
+    min-height: 0;
+    text-align: center;
+  }
+  .S_features_paragrapgh {
+    text-align: center;
+    margin-top: 10px;
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .S_features {
+    padding: 0 20px 0 20px;
+    margin-top: 35px;
+  }
 }
